@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      "joi-helpers@git+https://github.com/launchunit/joi-helpers.git",
+      "/Users/kevbook/Documents/code/applico/lambda/functions/hello"
+    ]
+  ],
+  "_from": "git+https://github.com/launchunit/joi-helpers.git",
+  "_id": "joi-helpers@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/joi-helpers",
+  "_phantomChildren": {},
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/launchunit/joi-helpers/master/package.json",
+      "gitUrl": "git://github.com/launchunit/joi-helpers.git",
+      "httpsUrl": "git+https://github.com/launchunit/joi-helpers.git",
+      "shortcut": "github:launchunit/joi-helpers",
+      "ssh": "git@github.com:launchunit/joi-helpers.git",
+      "sshUrl": "git+ssh://git@github.com/launchunit/joi-helpers.git",
+      "type": "github"
+    },
+    "name": "joi-helpers",
+    "raw": "joi-helpers@git+https://github.com/launchunit/joi-helpers.git",
+    "rawSpec": "git+https://github.com/launchunit/joi-helpers.git",
+    "scope": null,
+    "spec": "git+https://github.com/launchunit/joi-helpers.git",
+    "type": "hosted"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/launchunit/joi-helpers.git#41bef123bbbac293223911620956c89649525969",
+  "_shasum": "02904c25cdf594589b14ba55aa22a5415a02e2e5",
+  "_shrinkwrap": null,
+  "_spec": "joi-helpers@git+https://github.com/launchunit/joi-helpers.git",
+  "_where": "/Users/kevbook/Documents/code/applico/lambda/functions/hello",
+  "author": {
+    "email": "kevin.sakhuja@gmail.com",
+    "name": "Karan Sakhuja",
+    "url": "http://kevify.com"
+  },
+  "dependencies": {
+    "extend": "^3.0.0",
+    "joi": "^8.0.5",
+    "lodash": "^4.6.1",
+    "mongodb": "^2.1.14"
+  },
+  "description": "A set of helpers for Joi https://github.com/hapijs/joi",
+  "devDependencies": {
+    "ava": "^0.13.0"
+  },
+  "gitHead": "41bef123bbbac293223911620956c89649525969",
+  "main": "index.js",
+  "name": "joi-helpers",
+  "optionalDependencies": {},
+  "readme": "# joi-helpers\nA set of helpers for Joi https://github.com/hapijs/joi\n\n----\n\n## Usage\n\n```js\nconst Helpers = require('../');\n\n/**\n * Joi Default Options\n *\n * @public\n */\nconst defaultOptions = Helpers.defaultOptions;\n\n\n/**\n * anyValid Schema\n * Issue Workaround: https://github.com/hapijs/joi/issues/565\n *\n * @param schema {Joi Schema}\n * @param validsArray {Array}\n *\n * @public\n */\nexports.anyValid\n\n\n/**\n * Validate with Extra Things\n *\n * @param schema {Joi Schema}\n * @param data {Any}\n *\n * @public\n */\nHelpers.validate\n\n\n/**\n * objectId Joi Type\n *\n * @public\n */\nHelpers.objectId\n```\n\n\n#### Run Tests\n\n```bash\n$ npm test\n```\n",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "ava test/index.js -svw -S *.js"
+  },
+  "version": "1.0.0"
+}
